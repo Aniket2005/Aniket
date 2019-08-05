@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminhome</class>
+ <widget class="QMainWindow" name="adminhome">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Home</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources/adminhomeresource.qrc">
+    <normaloff>:/images/avatar.png</normaloff>:/images/avatar.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(91, 200, 191);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tblmanager">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>111</y>
+      <width>651</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>700</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="rowCount">
+     <number>1</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>157</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>65</number>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>54</number>
+    </attribute>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="btnrefresh">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>60</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/refresh.jpg);
+background-color: rgb(0, 0, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>30</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Manager Details</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="addaccount">
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);
+</string>
+    </property>
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="actionaddaccount"/>
+   </widget>
+   <widget class="QMenu" name="update">
+    <property name="title">
+     <string>Update</string>
+    </property>
+    <addaction name="actionupdateaccount"/>
+   </widget>
+   <widget class="QMenu" name="d">
+    <property name="title">
+     <string>Delete</string>
+    </property>
+    <addaction name="actiondeleteaccount"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionlogout"/>
+   </widget>
+   <widget class="QMenu" name="menuview">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionCollegeBasicDetail"/>
+    <addaction name="actionCollegeBranchDetails"/>
+    <addaction name="actionPlacements"/>
+    <addaction name="actionResult"/>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <addaction name="actionBranch_Wise"/>
+    <addaction name="actionYearwise"/>
+    <addaction name="actionPlacement_Branch_Wise"/>
+    <addaction name="actionPlacement_Year_Wise"/>
+    <addaction name="actionRating"/>
+   </widget>
+   <addaction name="addaccount"/>
+   <addaction name="update"/>
+   <addaction name="d"/>
+   <addaction name="menuview"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionaddaccount">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/plus.png</normaloff>:/images/plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Account</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionupdateaccount">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/update.jpg</normaloff>:/images/update.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Update Account</string>
+   </property>
+  </action>
+  <action name="actiondeleteaccount">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/Delete_Icon.png</normaloff>:/images/Delete_Icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Record</string>
+   </property>
+  </action>
+  <action name="actionlogout">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/logout.png</normaloff>:/images/logout.png</iconset>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionCollegeBasicDetail">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/zoom.jpg</normaloff>:/images/zoom.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>College Basic Detail</string>
+   </property>
+  </action>
+  <action name="actionCollegeBranchDetails">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/zoom.jpg</normaloff>:/images/zoom.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>College Branch Details</string>
+   </property>
+  </action>
+  <action name="actionPlacements">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/zoom.jpg</normaloff>:/images/zoom.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Placements</string>
+   </property>
+  </action>
+  <action name="actionResult">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/zoom.jpg</normaloff>:/images/zoom.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Result</string>
+   </property>
+  </action>
+  <action name="actionBranch_Wise">
+   <property name="icon">
+    <iconset resource="Resources/adminhomeresource.qrc">
+     <normaloff>:/images/graph.png</normaloff>:/images/graph.png</iconset>
+   </property>
+   <property name="text">
+    <string>Branch Wise Result</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Account">
+   <property name="text">
+    <string>Update Account</string>
+   </property>
+  </action>
+  <action name="actionYearwise">
+   <property name="text">
+    <string>Year  Wise Result</string>
+   </property>
+  </action>
+  <action name="actionPlacement_Branch_Wise">
+   <property name="text">
+    <string>Placement Branch Wise</string>
+   </property>
+  </action>
+  <action name="actionPlacement_Year_Wise">
+   <property name="text">
+    <string>Placement Year Wise</string>
+   </property>
+  </action>
+  <action name="actionRating">
+   <property name="text">
+    <string>Rating</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources/adminhomeresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

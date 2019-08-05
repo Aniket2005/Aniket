@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="image">
+    <file>images/forgorpwd.jpg</file>
+    <file>images/forgot.jpg</file>
+  </qresource>
+</RCC>

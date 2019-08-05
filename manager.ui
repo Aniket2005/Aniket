@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/user.png</normaloff>:/images/user.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/RmVYDsR.jpg);
+color: rgb(255, 255, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>75</y>
+      <width>681</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/C.U.SHAH COLLEGE (11).jpg);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnadd">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>470</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 22pt &quot;MS Shell Dlg 2&quot;;
+
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.495 rgba(255, 255, 255, 255), stop:0.505 rgba(255, 0, 0, 255), stop:1 rgba(255, 0, 0, 255));</string>
+    </property>
+    <property name="text">
+     <string>ADD COLLEGE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>20</y>
+      <width>251</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Hello&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbluser">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>17</y>
+      <width>190</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>679</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_profile">
+    <property name="title">
+     <string>Manage profile</string>
+    </property>
+    <addaction name="update"/>
+   </widget>
+   <widget class="QMenu" name="menuAccount">
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="logout"/>
+   </widget>
+   <widget class="QMenu" name="menuCollege">
+    <property name="title">
+     <string>College</string>
+    </property>
+    <addaction name="actionclgdetail"/>
+    <addaction name="actionAdmissions"/>
+    <addaction name="actionPlacement"/>
+    <addaction name="actionResult"/>
+   </widget>
+   <widget class="QMenu" name="menuSurvey_Form">
+    <property name="title">
+     <string>Survey Form</string>
+    </property>
+    <addaction name="actionFillForm"/>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <addaction name="actionResultYearwise"/>
+    <addaction name="actionResult_Course_wise"/>
+    <addaction name="actionPlacement_year_wise"/>
+    <addaction name="actionPlacement_Course_wise"/>
+    <addaction name="actionRatings"/>
+   </widget>
+   <widget class="QMenu" name="menuPrediction">
+    <property name="title">
+     <string>Prediction</string>
+    </property>
+    <addaction name="actionPredict_by_result"/>
+    <addaction name="actionpredict_by_placement"/>
+   </widget>
+   <addaction name="menuManage_profile"/>
+   <addaction name="menuAccount"/>
+   <addaction name="menuCollege"/>
+   <addaction name="menuSurvey_Form"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuPrediction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionupdate">
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </action>
+  <action name="actionlogout">
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </action>
+  <action name="update">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/if_Picture7_3289566.png</normaloff>:/images/if_Picture7_3289566.png</iconset>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="logout">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/user.png</normaloff>:/images/user.png</iconset>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionclgdetail">
+   <property name="text">
+    <string>Add college details</string>
+   </property>
+  </action>
+  <action name="actionAdmissions">
+   <property name="text">
+    <string>Admissions</string>
+   </property>
+  </action>
+  <action name="actionPlacement">
+   <property name="text">
+    <string>Placement</string>
+   </property>
+  </action>
+  <action name="actionResult">
+   <property name="text">
+    <string>Result</string>
+   </property>
+  </action>
+  <action name="actionFillForm">
+   <property name="text">
+    <string>Fill Form</string>
+   </property>
+  </action>
+  <action name="actionResultYearwise">
+   <property name="text">
+    <string>Result Yearwise</string>
+   </property>
+  </action>
+  <action name="actionResult_Course_wise">
+   <property name="text">
+    <string>Result Course wise</string>
+   </property>
+  </action>
+  <action name="actionPlacement_year_wise">
+   <property name="text">
+    <string>Placement year wise</string>
+   </property>
+  </action>
+  <action name="actionPlacement_Course_wise">
+   <property name="text">
+    <string>Placement Course wise</string>
+   </property>
+  </action>
+  <action name="actionRatings">
+   <property name="text">
+    <string>Ratings</string>
+   </property>
+  </action>
+  <action name="actionPredict_by_result">
+   <property name="text">
+    <string>Predict by result</string>
+   </property>
+  </action>
+  <action name="actionpredict_by_placement">
+   <property name="text">
+    <string>Predict by placement</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

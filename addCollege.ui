@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add_College</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="addcollegeresource.qrc">
+    <normaloff>:/image/images/plus.png</normaloff>:/image/images/plus.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 85, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblclgname">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>College Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtcollegename">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>110</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblclgcode">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>College Code</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtcollegecode">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>170</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblaffilation">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>240</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Affilation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnadd">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>320</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>240</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+alternate-background-color: rgb(255, 255, 255);
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>University of Lucknow</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deen Dayal Upadhyay Gorakhpur University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sampurnanand Sanskrit University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chaudhary Charan Singh University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chhatrapati Shahu Ji Maharaj University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mahatma Gandhi Kashi Vidyapeeth</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Chandra Shekhar Azad University of Agriculture &amp; Technology</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Narendra Dev University of Agriculture and Technology</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>M. J. P. Rohilkhand University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dr. Ram Manohar Lohia Avadh University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bundelkhand University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Veer Bahadur Singh Purvanchal University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sanjay Gandhi Postgraduate Institute of Medical Sciences</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Uttar Pradesh Rajarshi Tandon Open University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sardar Vallabhbhai Patel University of Agriculture and Technology</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dr. A.P.J. Abdul Kalam Technical University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>U.P. Pt. Deen Dayal Upadhyay Pashu Chikitsa Vigyan Vishwavidyalaya Evam Go-Ansundhan Sansthan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gautam Buddha University	</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>King George's Medical University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dr. Ram Manohar Lohiya National Law University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DSM National Rehabilitation University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Khwaja Moinuddin Chishti Urdu, Arabi Farsi University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Banda University of Agriculture and Technology</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Madan Mohan Malaviya University of Technology</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Siddharth University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Uttar Pradesh University of Medical Sciences</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Allahabad State University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Harcourt Butler Technical University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Jananayak Chandrashekhar University</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dr. B. R. Ambedkar University</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>40</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>College Details</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="addcollegeresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

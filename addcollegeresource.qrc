@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="image">
+    <file>images/pexels-photo-531880.jpeg</file>
+    <file>images/adminbg.jpg</file>
+    <file>images/adminbg.jpg</file>
+    <file>images/plus.png</file>
+    <file>images/collegebg.jpg</file>
+  </qresource>
+</RCC>
